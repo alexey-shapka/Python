@@ -1,8 +1,4 @@
 def repl(inputwords, bg, fg):
-    """inputwords = str(input("Введите предложение: "))
-    bg = input("Введите символ для заднего фона: ")
-    fg = input("Введите символ для буквы: ")"""
-
     listwords = []
     for i in inputwords:
         listwords.append(ord(i))
