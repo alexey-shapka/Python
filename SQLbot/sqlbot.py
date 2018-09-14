@@ -113,10 +113,4 @@ def handmes(message):
 
 if __name__ == '__main__':
      bot.polling(none_stop=True)
-"""
-@bot.message_handler(commands=['cart'])
-def cart(m):
-    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    keyboard.add(*[types.KeyboardButton(name) for name in ['Шерлок Холмс', 'Доктор Ватсон']])
 
-"""
