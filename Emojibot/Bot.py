@@ -1,7 +1,7 @@
 import telebot
 import letters
 import time
-token = '497885659:AAENUo0GELAyDn0HB5El3x7CZ_0Afoj6U08'
+token = ''
 bot = telebot.TeleBot(token)
 
 bot.send_message(chat_id=192348836,text='123')
@@ -13,8 +13,8 @@ def repeat_all_messages(message):
     a = b.replace(' ', '')
     sentence.append(a)
     if len(sentence[0]) < 3:
-        bot.send_message(message.chat.id, "Друг, а ты походу долбоёб.\n"
-                                          "Нужно ввести как минимум 3 символа (два последних задают отрисовку букв).")
+        bot.send_message(message.chat.id, "Error input.\n"
+                                          "You must enter more than 3 symbols (2 last`s is emoji.")
     elif a:
         a = [a[0:len(a)-2]]
         symbols=[]
